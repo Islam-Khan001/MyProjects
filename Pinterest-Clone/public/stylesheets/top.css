@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --accent-back: rgb(43, 43, 43);
+    --accent-light : #4a4a4a;
+    --accent-dark: #191919;
+    --accent-fore: #e60024;
+  }
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main-container {
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* overflow-y:scroll; */
+
+
+}
+
+#container-logo {
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 11%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sm {
+    position: absolute;
+    top: 5%;
+    width: 150px;
+    cursor: pointer;
+}
+
+#container-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#container-about {
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    top: 0;
+    right: 15%;
+    width: 15%;
+    height: 11%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container-about a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#container {
+    /* background-color: rebeccapurple; */
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 15%;
+    height: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: var(--accent-fore);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.26rem;
+}
+
+#a1 {
+    padding-right: 10px;
+}
+#a2 {
+    padding-left: 10px;
+}
+
+#a2 button {
+    background-color: white;
+    color: #191919;
+}
+
+#img-effect {
+    /* background-color: rgb(0, 51, 255); */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+    height: 71%;
+    width: 100%;
+    overflow-y:hidden;
+
+}
+
+#img-effect div {
+    background-color: red;
+    /* display: inline; */
+    /* position: absolute; */
+    opacity: 0%;
+    min-width: 315px;
+    height: 470px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition-property: margin-top,opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+#img-effect div:nth-child(1){
+    margin-top: -21px;
+    /* margin-top: -1%; */
+}
+
+#img-effect div:nth-child(2){    
+    margin-top: 307px;
+    /* margin-top: 15%; */
+   
+}
+
+#img-effect div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* top: 10%; */
+}
+
+#img-effect div:nth-child(3){    
+    margin-top: 532px;
+    /* margin-top: 26%; */
+}
+
+#img-effect div:nth-child(4){    
+    margin-top:860px;
+    /* margin-top: 47%; */
+}
+
+#img-effect div:nth-child(5){    
+    margin-top: 532px;
+    /* margin-top: 26%; */
+}
+
+#img-effect div:nth-child(6){    
+    margin-top: 307px;
+    /* margin-top: 15%; */
+}
+#img-effect div:nth-child(7){    
+    margin-top: -21px;
+    /* margin-top: -3%; */
+}
+
+/* #myimg9 {
+    margin-top: 10%;
+} */
+
+#center-text {
+    /* background-color: palevioletred; */
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 30%;
+}
+
+#center-text h1 {
+    /* display: block; */
+    position: absolute;
+    /* background-color: red; */
+    /* color: white; */
+    font-size: 4.5rem;
+}
+
+#static-text {
+    color: white;
+    position: absolute;
+    top: 0%;
+}
+
+#motion-text {
+    display: block;
+    bottom: 5%;
+    opacity: 0%;
+    /* bottom: 25%; */
+    color: #ae7a3b;
+    /* transform: translate(0px,-100px); */
+    transition-property: bottom,opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+
+} 
+
+#pages {
+    position: absolute;
+    bottom: 0%;
+    /* background-color: #070207; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 130px;
+}
+
+#pages a {
+    /* display: inline-block; */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+/* ------------------------------------------------- */
+
+#mainlogin-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: 50%; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* overflow-y:scroll; */
+    /* display: none; */
+}
+
+
+#login-container {
+    /* display: none; */
+    /* opacity: 0; */
+    position: absolute;
+    background-color: #2b2b2b;
+    width: 27%;
+    height: 70%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    position: absolute;
+    top: 25%;
+    height: 300px;
+    width: 520px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* background-color: #471e1e; */
+}
+
+#greet {
+    position: absolute;
+    top: 13%;
+    font-size: 30px;
+    color: white;
+}
+
+form input {
+    display: block;
+    width: 500px;
+    height: 50px;
+    background-color: #2b2b2b;
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding-left: 10px;
+    font-size: 17px;
+    color: white;
+
+}
+
+form input::placeholder {
+    color: white;
+    font-size: 17px;
+}
+
+form input:focus {
+    
+    border:2px solid#e60024;
+    
+}
+
+form button {
+    position: absolute;
+    margin-top: 13px;
+    width: 520px;
+    right: 10px;
+    
+}
+
+.inps {
+    margin: 15px 10px 5px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#g-login {
+
+    position: absolute;
+    top: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: #905e5e; */
+    height: 30%;
+
+}
+
+#g-login p {
+    display: block;
+    position: absolute;
+    top: 10px;
+    color: white;
+}
+
+
+#g-login button {
+    position: absolute;
+    top: 60px;
+    width: 91%;
+    border: 2px solid grey;
+    background-color: var(--accent-back);
+
+}
+
+#g-login a {
+    position: absolute;
+    bottom: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #e60024;
+
+}
+
+#error-login {
+    display: none;
+    color: #e60024;
+    padding-left: 170px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#login-username:focus ~ #error-login {
+    display: none;
+}
+
+#password:focus ~ #error-login {
+    display: none;
+}
+
+/* ------------------------------------------------- */
+
+#mainsignin-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: 50%; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* overflow-y:scroll; */
+    /* display: none; */
+}
+
+#signin-container {
+    position: absolute;
+    /* background-color: var(--accent-back); */
+    background-color: #2b2b2b;
+    width: 27%;
+    height: 70%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signinForm {
+    position: absolute;
+    top: 15%;
+    height: 400px;
+    /* background-color: aqua; */
+}
+
+#greet1 {
+    /*  */
+    position: absolute;
+    top: 6%;
+    font-size: 30px;
+    color: white;
+}
+
+#signinForm input {
+    display: block;
+    width: 500px;
+    height: 50px;
+    background-color: var(--accent-back);
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding-left: 10px;
+    font-size: 17px;
+    color: white;
+
+}
+
+#signinForm input::placeholder {
+    color: white;
+    font-size: 17px;
+}
+
+#signinForm input:focus {
+    
+    border-color:#e60024;
+    
+}
+
+#signinForm button {
+    position: absolute;
+    margin-top: 13px;
+    width: 520px;
+    right: 15px;
+}
+
+.inps {
+    margin: 15px 10px 5px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#g-signin {
+    /*  */
+    position: absolute;
+    top: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: #905e5e; */
+    height: 25%;
+
+}
+
+#g-signin p {
+    display: block;
+    position: absolute;
+    top: 10px;
+    color: white;
+}
+
+
+#g-signin button {
+    position: absolute;
+    top: 60px;
+    width: 91%;
+    border: 2px solid grey;
+    background-color: var(--accent-back);
+
+}
+
+#g-signin a {
+    /*  */
+    position: absolute;
+    bottom: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #e60024;
+
+}
+
+#error-text {
+    display: none;
+    color: #e60024;
+    padding-left: 130px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#email:focus ~ #error-text {
+    display: none; 
+}

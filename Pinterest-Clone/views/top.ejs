@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/stylesheets/top.css">
+    <script defer src="/javascripts/top.js"></script>
+</head>
+<body>
+    <div id="main-container">
+        <div id="container-logo">
+            <a href="/login">Pinterest</a>
+            <a href="/login">Today</a>
+            <a href="/login">Watch</a>
+            <a href="/login">Explore</a>
+        </div>
+
+        <button id="sm">Light Mode</button>
+
+        <div id="container-about">
+            <a href="/login">About</a>
+            <a href="/login">Business</a>
+            <a href="/login">Press</a>
+        </div>
+
+        <div id="container">
+            <a id="a1" href=""><button>Log In</button></a>
+            <a id="a2" href=""><button>Sign Up</button></a>
+        </div>
+
+        <div id="img-effect">
+            <div><img id="myimg1" src="images/1.jpg" alt="" srcset=""></div>
+            <div><img id="myimg2" src="images/12.jpg" alt="" srcset=""></div>
+            <div><img id="myimg3" src="images/3.jpg" alt="" srcset=""></div>
+            <div><img id="myimg4" src="images/4.jpg" alt="" srcset=""></div>
+            <div><img id="myimg5" src="images/5.jpg" alt="" srcset=""></div>
+            <div><img id="myimg6" src="images/13.jpg" alt="" srcset=""></div>
+            <div><img id="myimg7" src="images/7.jpg" alt="" srcset=""></div>            
+        </div>
+
+        <div id="center-text">
+            <h1 id="static-text">Get your next</h1>
+            <h1 id="motion-text" >Something to replace</h1>
+            <div id="pages">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </div>
+            
+        </div>
+
+        <div id="mainlogin-container">
+            <div id="login-container">
+                <p id="greet">Welcome to Pinterest</p>
+                <form id="loginForm" action="/logins" method="post">
+                    <input type="hidden" name="inputForm" value="login">
+                    <p class="inps">Username</p>                
+                    <input id="login-username" type="text" placeholder="username" name="username" required>
+                    <p class="inps">Password</p>
+                    <input id="password" type="password" placeholder="password" name="password" required>
+                    <p id="error-login">Username not found</p>
+                    <button type="submit">Log in</button>
+                </form>
+                <div id="g-login">
+                    <p id="por">OR</p>
+                    <button>Continue with Google</button>
+                    <a href="">Don't have an Account? Sign up</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mainsignin-container">
+
+            <div id="signin-container">
+                <p id="greet1">Welcome to Pinterest</p>
+                <form id="signinForm" action="/signup" method="post">
+                    <input type="hidden" name="inputForm" value="signin">
+                    <p class="inps">Create username</p>                
+                    <input id="username" type="text" placeholder="Username" name="username" required>
+                    <p class="inps">Email</p>                
+                    <input id="email" type="email" placeholder="email" name="email" required>
+                    <p class="inps">Create strong password</p>
+                    <input type="password" placeholder="password" name="password" required>
+                    <p id="error-text">Username or Email Already Exists</p>
+                    <button type="submit">Continue</button>
+                </form>
+                <div id="g-signin">
+                    <p id="por">OR</p>
+                    <button>Continue with Google</button>
+                    <a href="">Already a Member? Log in</a>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    
+</body>
+</html>
